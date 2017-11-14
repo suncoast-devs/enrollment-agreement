@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Source+Serif+Pro:400,600,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: 'Source Serif Pro', serif;
+}
+
+figure {
+  text-align: center;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'] {
+  font-size: 1em;
+  padding: 0;
+  border: none;
+  border-bottom: thin solid black;
+  font-family: 'Source Serif Pro';
+}
+
+form label,
+th {
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 2em;
+}
+
+form.student-information {
+  display: grid;
+  grid-template-columns: 3em 1fr 4.6em 9em;
+  grid-template-rows: 2em;
+  grid-gap: 0.5em;
+  align-items: start;
+}
+
+div.multi.address {
+  grid-template-columns: 3fr 2fr 3em 5em;
+  grid-column: 2 / 5;
+}
+
+div.multi.date {
+  grid-template-columns: 2em 2em 4em;
+}
+
+div.multi {
+  display: grid;
+  grid-gap: 0 0.5em;
+}
+
+div.multi span {
+  font-size: 0.6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+form.signature {
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: 12em 1fr 1.5em 9em;
+  grid-template-rows: 4em;
+  grid-gap: 0.5em;
+  align-items: start;
+}
+
+ul.payment-method {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.payment-method input {
+  margin-right: 1em;
+  margin-top: -0.3em;
+  vertical-align: middle;
+  transform: scale(1.2);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+h2 {
+  text-align: center;
+}
+
+p.binding {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: justify;
+  border: thin solid black;
+  padding: 0.25in;
+}
+
+table.costs td {
+  font-family: 'Source Serif Pro', serif;
+}
+
+td.computer-cost {
+  color: #ccc;
+}
+
+td.scholarship {
+  position: relative;
+}
+
+td.scholarship::before {
+  content: '(';
+  position: absolute;
+  margin-left: -0.4em;
+}
+
+td.scholarship::after {
+  content: ')';
+  position: absolute;
+}
+
+p.certification {
+  text-align: center;
+  font-style: italic;
+}
+
+address {
+  text-align: center;
+  font-style: normal;
+}
+
+table {
+  margin: auto;
+}
+
+th,
+td {
+  padding-left: 0.5em;
+}
+
+ul ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+p.before-sign {
+  border: thin solid black;
+  padding: 0.5em;
+}
+
+p.page {
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+p.fn {
+  font-size: 0.8em;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  page-break-after: always;
+}
+
+section main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+main p:not([class]),
+ul:not([class]) {
+  align-self: center;
+  max-width: 32em;
+  text-align: justify;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Student Enrollment Agreement</title>
+  <link rel="stylesheet" href="print.css" />
+</head>
+
+<body>
+  <section class="p1">
+    <main>
+      <figure>
+        <img src="logo.svg" alt="Suncoast Developers Guild Logo" height="120">
+      </figure>
+
+      <h1>Student Enrollment Agreement</h1>
+
+      <p class="binding">This contract, together with the school catalog, will constitute a binding agreement upon acceptance by Suncoast Developers Guild (the institution) and the student.</p>
+
+      <h2>School Information</h2>
+
+      <address>
+      <strong>Suncoast Developers Guild</strong><br>
+      100 7<sup>th</sup> St S,
+      St Petersburg, FL 33701,
+      (727) 201-2012
+    </address>
+
+      <h2>Student Information</h2>
+
+      <form class="student-information">
+        <label>Name</label>
+        <input type="text" name="name">
+        <label>Telephone</label>
+        <input type="tel" name="telephone">
+        <label>Email</label>
+        <input type="email" name="email-address">
+        <label>Date of Birth</label>
+        <div class="date multi">
+          <input type="text" name="month">
+          <input type="text" name="day">
+          <input type="text" name="year">
+          <span>Month</span>
+          <span>Day</span>
+          <span>Year</span>
+        </div>
+        <label>Address</label>
+        <div class="address multi">
+          <input type="text" name="street">
+          <input type="text" name="city">
+          <input type="text" name="state">
+          <input type="text" name="zip">
+          <span>Street</span>
+          <span>City</span>
+          <span>State</span>
+          <span>ZIP</span>
+        </div>
+      </form>
+
+      <h2>Program Information</h2>
+
+      <table>
+        <tr>
+          <th>Program Title</th>
+          <td>Web Development</td>
+          <th>Start Date</th>
+          <td>
+            <div class="date multi">
+              <input type="text" name="month" maxlength="2">
+              <input type="text" name="day" maxlength="2">
+              <input type="text" name="year" maxlength="4">
+              <span>Month</span>
+              <span>Day</span>
+              <span>Year</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>Clock Hours</th>
+          <td>396 (3 months)</td>
+          <th>Expected End Date</th>
+          <td>
+            <div class="date multi">
+              <input type="text" name="month">
+              <input type="text" name="day">
+              <input type="text" name="year">
+              <span>Month</span>
+              <span>Day</span>
+              <span>Year</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>Class Schedule</th>
+          <td colspan="3">Class is from 9am to 5pm Monday through Thursday and 9am to 3pm Friday.</td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      <p class="page">Page 1 <em>of</em> 4</p>
+    </footer>
+  </section>
+
+  <section class="p2">
+    <main>
+      <h2>Tuition</h2>
+
+      <ul>
+        <li>Full payment at time of signing enrollment agreement; <em>or</em></li>
+        <li>$1,000 Down payment at time of signing enrollment agreement with balance paid prior to program start date.</li>
+      </ul>
+
+      <table class="costs">
+        <tr>
+          <th>Program Tuition</th>
+          <td>$14,900</td>
+        </tr>
+        <tr>
+          <th>Scholarship Awards</th>
+          <td class="scholarship">$<input type="text" name="scholarship" size="6">&nbsp;</td>
+        </tr>
+        <tr>
+          <th>Fees</th>
+          <td>$0</td>
+        </tr>
+        <tr>
+          <th>Books/Supplies</th>
+          <td>$0</td>
+        </tr>
+        <tr>
+          <th>Computer</th>
+          <td class="computer-cost">$1000<sup>1</sup></td>
+        </tr>
+        <tfoot>
+          <tr>
+            <th>Total Cost</th>
+            <td>$<input type="text" name="total-cost" size="6">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <p>Minimum computer requirements:</p>
+
+      <ul>
+        <li>8GB of RAM</li>
+        <li>500GB HDD</li>
+        <li>macOS High Sierra (10.13) or Windows 10<sup>2</sup></li>
+      </ul>
+
+      <h3>Method of Payment</h3>
+
+      <ul class="payment-method">
+        <li><input type="radio" name="payment-method" id="cd" /><label for="cd">Credit/Debit</label></li>
+        <li><input type="radio" name="payment-method" id="cc" /><label for="cc">Cashier Check</label></li>
+        <li><input type="radio" name="payment-method" id="mo" /><label for="mo">Money Order</label></li>
+        <li><input type="radio" name="payment-method" id="ca" /><label for="ca">Cash</label></li>
+      </ul>
+
+      <p>All prices for program are printed herein. Contracts are not sold to a third party at any time. There are no carrying charges, interest charges, or service charges connected or charged with any of these programs unless stated.</p>
+    </main>
+    <footer>
+      <p class="fn"><sup>1</sup><strong>You are required to provide and use a personal laptop.</strong> Shown is the average cost of a laptop used by students.</p>
+      <p class="fn"><sup>2</sup>PC laptops are subject to instructor approval, see Catalog for more information.</p>
+      <p class="page">Page 2 <em>of</em> 4</p>
+    </footer>
+  </section>
+  <section class="p3">
+    <main>
+      <h2>Cancellation and Refund Policy</h2>
+
+      <p>The following refund policy will be followed if a student's enrollment in the program is terminated for any reason:</p>
+
+      <ul>
+        <li>Cancellation or termination can be made in person, by email, or by certified mail.</li>
+        <li>Any collected funds will be returned if an applicant is not accepted to the program.</li>
+        <li>Students accepted to the program will be returned all funds if enrollment is cancelled within three (3) business days of signing the enrollment agreement.</li>
+        <li>In the event of cancellation after program attendance has begun, funds will be returned Pro Rata up to 40% of total program hours, based on the number of completed hours.</li>
+        <li>No funds will be returned after 40% completion of the program.</li>
+        <li>In calculating refunds, the last date of actual attendance is used to determine completed hours.</li>
+        <li>Any refunds due will be made within 30 days of:
+          <ul>
+            <li>receiving notice of cancellation from the student; <em>or</em></li>
+            <li>termination of the student by the school.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Grounds for Termination</h2>
+      <p>The student’s enrollment can be terminated at the discretion of the institution for lack of academic progress, non-payment of tuition or fees, or failing to comply with policies established in the Catalog and this agreement.</p>
+
+      <h2>Employment Assistance</h2>
+      <p>Career support and placement assistance may be offered by the institution, but do not guarantee employment.</p>
+    </main>
+    <footer>
+      <p class="page">Page 3 <em>of</em> 4</p>
+    </footer>
+  </section>
+  <section class="p4">
+    <main>
+      <h2>Acknowledgement</h2>
+      <p>This Agreement and the Catalog constitute a binding contract between the institution and the student and no further modification or representation except as herein expressed by both parties will be recognized.</p>
+
+      <h2>Credential Awarded</h2>
+      <p>Upon the successful completion of the program, the student will receive a:</p>
+      <p class="certification"><strong>Certification of Completion in Web Development</strong></p>
+    </main>
+    <footer>
+      <p class='before-sign'><strong>IMPORTANT:</strong> Before signing this contract; ensure you have read it, and it contains no blank spaces. By signing this contract you acknowledge you have read and received a copy of the binding document and catalog.</p>
+
+      <form class="signature">
+        <label>Signature of Applicant</label>
+        <input type="text" name="applicant-signature" />
+
+        <label>Date</label>
+        <div class="date multi">
+          <input type="text" name="month">
+          <input type="text" name="day">
+          <input type="text" name="year">
+          <span>Month</span>
+          <span>Day</span>
+          <span>Year</span>
+        </div>
+
+        <label>Signature of Institution Official</label>
+        <input type="text" name="institution-signature" />
+
+        <label>Date</label>
+        <div class="date multi">
+          <input type="text" name="month">
+          <input type="text" name="day">
+          <input type="text" name="year">
+          <span>Month</span>
+          <span>Day</span>
+          <span>Year</span>
+        </div>
+      </form>
+      <p class="page">Page 4 <em>of</em> 4</p>
+    </footer>
+  </section>
+</body>
+
+</html>
