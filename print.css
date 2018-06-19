@@ -116,7 +116,7 @@ p.binding {
   text-transform: uppercase;
   text-align: justify;
   border: thin solid black;
-  padding: 0.25in;
+  padding: 0.1in;
 }
 
 table.costs td {
