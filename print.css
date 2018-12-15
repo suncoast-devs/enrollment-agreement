@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Source+Serif+Pro:400,600,700');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Source+Serif+Pro:400,600,700");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 14pt;
   margin: 0;
 }
@@ -19,7 +19,7 @@ h1,
 h2,
 h3 {
   text-align: center;
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
 }
 
 figure {
@@ -31,14 +31,14 @@ input:active {
   outline: none;
 }
 
-input[type='text'],
-input[type='tel'],
-input[type='email'] {
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
   font-size: 1em;
   padding: 0;
   border: none;
   border-bottom: thin solid black;
-  font-family: 'Source Serif Pro';
+  font-family: "Source Serif Pro";
 }
 
 form label,
@@ -120,7 +120,7 @@ p.binding {
 }
 
 table.costs td {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
 }
 
 td.computer-cost {
@@ -132,13 +132,16 @@ td.scholarship {
 }
 
 td.scholarship::before {
-  content: '(';
+  content: "(";
   position: absolute;
-  margin-left: -0.4em;
+  bottom: 0.2rem;
+  left: 0.1rem;
 }
 
 td.scholarship::after {
-  content: ')';
+  content: ")";
+  bottom: 0.2rem;
+  right: -0.6rem;
   position: absolute;
 }
 
@@ -200,4 +203,18 @@ ul:not([class]) {
   align-self: center;
   max-width: 32em;
   text-align: justify;
+}
+
+#variables {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.5rem;
+}
+
+#variables,
+span.hidden,
+input::placeholder {
+  -webkit-print-color-adjust: exact;
+  color: white;
 }
