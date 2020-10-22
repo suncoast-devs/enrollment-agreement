@@ -92,10 +92,15 @@ ul.payment-method {
   justify-content: space-around;
   list-style: none;
   padding-left: 0;
+  margin: 0 auto;
+}
+
+ul.payment-method li {
+  margin: 0 1em; 
 }
 
 ul.payment-method input {
-  margin-right: 1em;
+  margin-right: 0.5em;
   margin-top: -0.3em;
   vertical-align: middle;
   transform: scale(1.2);

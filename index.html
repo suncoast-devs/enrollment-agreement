@@ -29,7 +29,7 @@
 
         <address>
           <strong>Academy at Suncoast Developers Guild</strong><br />
-          2220 Central Ave, St. Petersburg, FL 33712-1224 (727) 201-2012<br />
+          2220 Central Ave, St. Petersburg, FL 33712-1224 &bull; 1 (727) 201-2012<br />
           <a href="https://suncoast.io">https://suncoast.io</a>
         </address>
 
@@ -44,14 +44,14 @@
           <input type="email" name="email-address" placeholder="[$email]" />
           <label>Date of Birth</label>
           <div class="date">
-            <input type="text" name="date" placeholder="[$dob]" />
+            <input type="text" name="date-of-birth" placeholder="[$dob]" />
           </div>
           <label>Address</label>
           <div class="address multi">
-            <input type="text" name="street" placeholder="[$street]" />
-            <input type="text" name="city" placeholder="[$city]" />
-            <input type="text" name="state" placeholder="[$st]" />
-            <input type="text" name="zip" placeholder="[$zip]" />
+            <input type="text" name="street" />
+            <input type="text" name="city" />
+            <input type="text" name="state" />
+            <input type="text" name="zip" />
             <span>Street</span> <span>City</span> <span>State</span>
             <span>ZIP</span>
           </div>
@@ -66,25 +66,18 @@
             <th>Start Date</th>
             <td>
               <div class="date">
-                <input type="text" name="date" placeholder="[$cohort_begin]" />
+                <input type="text" name="start-date" placeholder="[$cohort_begin]" />
               </div>
             </td>
           </tr>
           <tr>
             <th>Clock Hours</th>
-            <td>396 (3 months)</td>
+            <td>396 Hours</td>
             <th>Anticipated End Date</th>
             <td>
               <div class="date">
-                <input type="text" name="date" placeholder="[$cohort_end]" />
+                <input type="text" name="end-date" placeholder="[$cohort_end]" />
               </div>
-            </td>
-          </tr>
-          <tr>
-            <th>Class Schedule</th>
-            <td colspan="3">
-              Class is from 9am to 5pm Monday through Thursday and 9am to 3pm
-              Friday.
             </td>
           </tr>
         </table>
@@ -156,7 +149,7 @@
         <ul>
           <li>8GB of RAM</li>
           <li>250GB SSD or HDD</li>
-          <li>macOS Mojave (10.14) or Windows 10 64-bit<sup>2</sup></li>
+          <li>macOS or Windows<sup>2</sup></li>
         </ul>
 
         <h3>Method of Payment</h3>
@@ -168,10 +161,15 @@
           </li>
           <li>
             <span class="hidden">[$p2]</span>
-            <label for="mo">Check / Money Order</label>
+            <label for="mo">Cash/Check</label>
           </li>
           <li>
-            <span class="hidden">[$p3]</span> <label for="ca">Cash</label>
+            <span class="hidden">[$p3]</span>
+            <label for="ca">Third-party Financing</label>
+          </li>
+          <li>
+            <span class="hidden">[$p4]</span>
+            <label for="ca">Other</label>
           </li>
         </ul>
 
@@ -290,7 +288,7 @@
         </p>
 
         <form class="signature">
-          <label>Signature of Applicant (or parent/guardian if minor)</label>
+          <label>Signature of Applicant<br/><small>(or parent/guardian if minor)</small></label>
           <input
             type="text"
             name="applicant-signature"
@@ -299,7 +297,7 @@
 
           <label>Date</label>
           <div class="date">
-            <input type="text" name="date" placeholder="[$student_sig_date]" />
+            <input type="text" name="student-sign-date" placeholder="[$student_sig_date]" />
           </div>
 
           <label>Signature of Institution Official</label>
@@ -311,7 +309,7 @@
 
           <label>Date</label>
           <div class="date">
-            <input type="text" name="date" placeholder="[$staff_sig_date]" />
+            <input type="text" name="staff-sign-date" placeholder="[$staff_sig_date]" />
           </div>
         </form>
         <p class="page">Page 4 <em>of</em> 4</p>
